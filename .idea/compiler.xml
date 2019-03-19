@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="config-service" />
+        <module name="eureka-server" />
+        <module name="restaurant-service" />
+        <module name="zuul-apigateway" />
+      </profile>
+      <profile name="Annotation profile for boeing-w1-test" enabled="true">
+        <sourceOutputDir name="../restaurant-service/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../restaurant-service/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="user-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="boeing-w1-test" target="1.8" />
+      <module name="config-service" target="11" />
+      <module name="eureka-server" target="11" />
+      <module name="restaurant-service" target="11" />
+      <module name="user-service" target="11" />
+      <module name="zuul-apigateway" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config-service" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="restaurant-service" options="-parameters" />
+      <module name="user-service" options="-parameters" />
+      <module name="zuul-apigateway" options="-parameters" />
+    </option>
+  </component>
+</project>
